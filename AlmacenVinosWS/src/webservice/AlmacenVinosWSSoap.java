@@ -9,4 +9,6 @@ package webservice;
 
 public interface AlmacenVinosWSSoap extends java.rmi.Remote {
     public webservice.ConsultaResponseConsultaResult consulta() throws java.rmi.RemoteException;
+    public boolean comprobarStock(java.lang.String v) throws java.rmi.RemoteException;
+    public int cambiarStock(java.lang.String s, java.lang.String v) throws java.rmi.RemoteException;
 }

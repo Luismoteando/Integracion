@@ -50,5 +50,17 @@ public class AlmacenVinosWSSoapProxy implements webservice.AlmacenVinosWSSoap {
     return almacenVinosWSSoap.consulta();
   }
   
+  public boolean comprobarStock(java.lang.String v) throws java.rmi.RemoteException{
+    if (almacenVinosWSSoap == null)
+      _initAlmacenVinosWSSoapProxy();
+    return almacenVinosWSSoap.comprobarStock(v);
+  }
+  
+  public int cambiarStock(java.lang.String s, java.lang.String v) throws java.rmi.RemoteException{
+    if (almacenVinosWSSoap == null)
+      _initAlmacenVinosWSSoapProxy();
+    return almacenVinosWSSoap.cambiarStock(s, v);
+  }
+  
   
 }
