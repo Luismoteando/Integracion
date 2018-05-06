@@ -6,7 +6,7 @@ public class AlmacenVinosWSClient {
 		
 		AlmacenVinosWSSoapProxy proxy = new AlmacenVinosWSSoapProxy();
 
-		proxy.setEndpoint("http://localhost:52606/AlmacenVinosWS.asmx");
+		proxy.setEndpoint("http://localhost:52606/Logica/AlmacenVinosWS.asmx");
 
 		try {
 			System.out.println(proxy.consulta());
